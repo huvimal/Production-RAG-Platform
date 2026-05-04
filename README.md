@@ -78,12 +78,13 @@ Answer Relevancy
 → Does it answer the question correctly?
 Context Precision
 → Is retrieved context actually useful?
+
 📊 Benchmark Results
 
 Strategy	Faithfulness	Relevancy	Context Precision
-Simple RAG	0.850	0.820	0.780
-Hybrid Search	0.910	0.880	0.850
-Hybrid + Reranking	0.965	0.940	0.925
+Simple RAG	   0.850	      0.820	          0.780
+Hybrid Search	0.910	      0.880	          0.850
+Hybrid + Reranking	0.965	  0.940	          0.925
 
 🔍 Key Insight
 Hybrid > Vector-only
@@ -116,11 +117,11 @@ pip install -r requirements.txt
 2. Setup environment
 
 Create .env file:
-
 GROQ_API_KEY=your_api_key_here
 
 3. Run application
 python app.py
+
 🧪 Evaluation Workflow
 Define test queries
 Run pipeline (all strategies)
@@ -151,8 +152,8 @@ Versioning datasets + benchmarks
  Docker + deployment pipeline
  Vector DB scaling (FAISS / Milvus)
  Fine-tuned reranker
+ 
 👤 Author
-
 Lê Mai Vĩnh Hưng
 
 🎯 Focus: AI Engineering • Data Engineering • LLM Systems
