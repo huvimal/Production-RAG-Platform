@@ -15,30 +15,41 @@ https://huvimal-production-rag-platform.hf.space
 Traditional RAG pipelines often fail in real-world scenarios due to:
 
 ❌ Weak keyword matching (misses exact terms)
+
 ❌ Pure vector search (semantic drift)
+
 ❌ No evaluation → “looks correct but is wrong”
+
 ❌ No benchmarking → cannot improve systematically
 
 👉 This project addresses all of the above.
 
 🧠 System Architecture
+
 User Query
     ↓
+    
 Query Processing
     ↓
+    
 Retrieval Layer
     ├── Vector Search (Dense Retrieval)
     ├── BM25 (Sparse Retrieval)
     └── Hybrid Fusion (RRF)
     ↓
+    
 Reranking Layer (Cross-Encoder)
     ↓
+    
 Context Selection
     ↓
+    
 LLM Generation (Llama 3.3 via Groq)
     ↓
+    
 Answer + Citations
     ↓
+    
 Evaluation (RAGAS)
 
 ⚙️ Core Components
@@ -101,6 +112,8 @@ Reranking	Cross-Encoder
 Evaluation	RAGAS
 Backend	Python
 UI	Gradio
+
+
 📁 Project Structure
 .
 ├── app.py              # Gradio UI
